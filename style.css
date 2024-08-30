@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 0;
+}
+
+.modal-principal {
+    border-radius: 2px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: rgb(196, 196, 196);
+    height: 30%;
+    width: 30%;
+    justify-content: center;
+    padding: 30px;
+
+    label {
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    input {
+        width: 80%;
+        padding: 15px;
+        border-radius: 3px;
+        margin: 10px auto;
+    }
+
+    button {
+        width: 60%;
+        margin: 0 auto;
+        padding: 15px 0px;
+        font-size: x-large;
+        font-weight: 800;
+        border-radius: 8px;
+        color: white;
+        transition: all 0.4s;
+        background: #000fff;
+    }
+
+    h4 {
+        font-weight: 400;
+        margin: 10px 0;
+    }
+}
+
+.button {
+    cursor: pointer;
+    margin: 100px 0;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    background: #000fff;
+    font-size: 16px;
+    transition: all 0.3s;
+
+}
+
+.button:hover,
+button:hover {
+    scale: 1.05;
+    background: #000ddd;
+
+}
+
+.resposta3 {
+    width: 90%;
+    margin: auto;
+    background: #474747;
+    color: #fff;
+    padding: 20px;
+
+    strong {
+        width: 100%;
+    }
+}
+
+.pergunta {
+    text-align: center;
+}
+
+.resposta4 {
+    width: 70%;
+    margin: auto;
+
+    span {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: red;
+    }
+}
+
+.pergunta5 {
+    font-size: medium;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.resposta5 {
+    background: #464545a2;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.desafio1,
+.desafio2,
+.desafio3,
+.desafio4,
+.desafio5 {
+    display: none;
+    background: #000;
+}
+
+.openDesafio1,
+.openDesafio2,
+.openDesafio3,
+.openDesafio4,
+.openDesafio5 {
+    position: absolute;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.801);
+}
+
+#close,
+#close2,
+#close3,
+#close4,
+#close5 {
+    width: 100px;
+    position: absolute;
+    text-align: right;
+    font-weight: 800;
+    padding-right: 10px;
+    top: 10px;
+    font-size: 30px;
+    right: 0px;
+    cursor: pointer;
+}
